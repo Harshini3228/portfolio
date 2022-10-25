@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="heading">
+        <p class="title">Work experience and education</p>
+        <div class="line"></div>
+    </div>
+    <div class="tabs">
+        <div class="tab-title">
+            <div>
+                <ul *ngFor="let tab of tabs">
+                    <li [class.active]="tab.active" class="tab-list" (click)="chooseTab(tab)">{{tab.name}}</li>
+                </ul>
+            </div>
+            <div *ngIf="currentTab.name==='Tata Elxsi'&&currentTab.active">
+                <div class="designation">Frontend Developer <a class="link" href="https://www.tataelxsi.com" target="_blank">@Tata Elxsi</a></div>
+                <div class="range">December 2019-Present</div>
+                <div class="role-description">
+                    <li>Worked with a team of backend engineers, devops and testers in enhancing a CICD based application catering to provide solutions for 5G network deployment</li>
+                    <li>Helped in building responsive code, improving design, adding features as per customer requirements and fixing bugs.</li>
+                    <li>Contributed to open source code at OSM-MANO</li>
+                </div>
+            </div>
+            <div *ngIf="currentTab.name==='REC'&&currentTab.active">
+                <div class="designation">Electronics and communication <a class="link" href="https://www.rajalakshmi.org" target="_blank">@REC</a></div>
+                <div class="range">August 2015-April 2019</div>
+                <div class="role-description">
+                    <li>Bachelor's degree in Rajalakshmi Engineering College in the field of ECE </li>
+                    <li>Graduated with a CGPA of 8.32 </li>
+                    <li>My final year project, Anti-Dodgeable Traffic lights system was aimed at reducing rule-breaking in traffic by implementing a line of spikes, programmed to rise during red-light signals.</li>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

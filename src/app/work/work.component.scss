@@ -1,0 +1,85 @@
+$green:#64ffda;
+$font-calibre:"Calibre",
+"Inter",
+"San Francisco",
+"SF Pro Text",
+-apple-system,
+system-ui,
+sans-serif;
+.container {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: -50px;
+}
+
+.tab-title {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-list {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 13px;
+    width: 115px;
+    margin-right: 20px;
+    &.hover {
+        background-color: #233554;
+    }
+}
+
+.active {
+    border-left: 2px solid #64ffda;
+    transition: all 1s;
+    color: #64ffda;
+}
+
+.tab-list:hover {
+    background-color: #233554;
+}
+
+.designation {
+    font-size: 22px;
+    color: #ccd6f6;
+    margin-top: 20px;
+    font-family: $font-calibre;
+    a {
+        color: #64ffda;
+    }
+}
+
+.range {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    margin: 10px 0px;
+    font-size: 13px;
+}
+
+.role-description {
+    font-family: $font-calibre;
+    margin: 20px 0px;
+    width: 600px;
+    li {
+        margin: 10px 0px;
+        font-size: 18px;
+        list-style: none;
+    }
+    li::before {
+        content: "▹";
+        color: $green;
+        margin-right: 20px;
+    }
+}
+
+.title::before {
+    color: $green;
+    content: '03. ';
+    font-size: 22px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
