@@ -1,0 +1,47 @@
+$green:#64ffda;
+header {
+    padding: 10px;
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+ol {
+    color: #64ffda;
+    list-style: none;
+    padding: 10px 50px;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px 15px;
+}
+
+.one::before {
+    content: '01.';
+}
+
+.two::before {
+    content: '02.';
+}
+
+.three::before {
+    content: '03.';
+}
+
+.four::before {
+    content: '04.';
+}
+
+.five::before {
+    content: '05.';
+}
+
+.one::before,
+.two::before,
+.three::before,
+.four::before,
+.five::before {
+    color: #64ffda;
+}

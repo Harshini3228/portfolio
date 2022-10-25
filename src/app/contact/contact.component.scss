@@ -1,0 +1,51 @@
+$green:#64ffda;
+h4 {
+    color: $green;
+    font-size: 16px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+h4::before {
+    content: '04. ';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.text {
+    width: 40vw;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+}
+
+button {
+    color: $green;
+    background-color: transparent;
+    border: 1px solid $green;
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    margin: 0 200px;
+    line-height: 1;
+    text-decoration: none;
+    margin-top: 50px;
+    cursor: pointer;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+.line-2 {
+    color: #ccd6f6;
+    font-size: 60px;
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
