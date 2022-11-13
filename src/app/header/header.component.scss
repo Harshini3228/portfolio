@@ -1,4 +1,8 @@
 $green:#64ffda;
+* {
+    scroll-behavior: smooth;
+}
+
 header {
     padding: 10px;
     font-size: 13px;
@@ -16,6 +20,7 @@ ol {
 a {
     text-decoration: none;
     padding: 0px 15px;
+    cursor: pointer;
 }
 
 .one::before {
