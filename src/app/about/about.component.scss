@@ -1,4 +1,5 @@
 $green:#64ffda;
+@import "../../styles.scss";
 .about-title::before {
     color: $green;
     content: '01. ';
